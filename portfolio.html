@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Tharun Kumar | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        /* Navbar */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #020617;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hero */
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            background: #3b82f6;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 70px 80px;
+            text-align: center;
+        }
+
+        /* Skills */
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        /* Projects */
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: #1e293b;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact */
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Tharun</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+
+        <h1>Sai Tharun Kumar Byalla</h1>
+        <p>Full Stack Developer | Python Developer</p>
+
+        <p>Building scalable web applications and AI-driven solutions</p>
+
+        <button>View Projects</button>
+        <button>Contact Me</button>
+
+    </section>
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Motivated Full Stack Developer with strong experience in Python,
+            backend development, machine learning, and database integration.
+            Passionate about building scalable and efficient applications
+            using Django, React, and modern web technologies.
+        </p>
+
+        <p>Location: Ananthapur, Andhra Pradesh, India</p>
+
+    </section>
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Python</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">React.js</div>
+            <div class="skill">Tailwind CSS</div>
+            <div class="skill">Django</div>
+            <div class="skill">REST API</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">VS Code</div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>MRI Insight – Brain Tumor Detection</h3>
+                <p>
+                    Deep learning model to detect and segment brain tumors
+                    from MRI images using TensorFlow and OpenCV.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Stock Price Forecasting</h3>
+                <p>
+                    Machine learning system to predict stock price trends
+                    using Python, Pandas, and NumPy.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p>Email: tharunkumart99@gmail.com</p>
+        <p>Phone: +91 8919181713</p>
+        <p>LinkedIn: linkedin.com/in/tharunkumar-byalla-6178402b2</p>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Sai Tharun Kumar Byalla | Portfolio</p>
+
+    </footer>
+
+</body>
+
+</html>
